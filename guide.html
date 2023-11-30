@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <title>Homelabs - Guide</title>
+  </head>
+  <body>
+    <nav>
+      <h1>Homelabs</h1>
+      <p>
+        <a href="index.html">Home</a>
+        &nbsp;&nbsp;
+        <a href="guide.html">Guide</a>
+        &nbsp;&nbsp;
+        <a href="moreinfo.html">Want to know more?</a>
+      </p>
+      <hr />
+    </nav>
+
+    <main>
+      <table width="100%">
+        <tbody>
+          <tr>
+            <td valign="top">
+              <h2>Introduction</h2>
+              <p>
+                So you want to make your own homelab? We can get started on
+                that!
+              </p>
+              <h2>What computers would I need?</h2>
+              <p>
+                You can use any computer, whether it can be a
+                <small>small</small> or a <b>big</b> one!
+              </p>
+              <a href="https://www.raspberrypi.com/products/raspberry-pi-5"
+                ><img src="img/rpi.jpg" alt="Raspberry Pi" width="30%"
+              /></a>
+              <a
+                href="https://www.lenovo.com/il/en/desktops-and-all-in-ones/thinkcentre/m-series-sff/ThinkCentre-M700-SFF/p/11TC1TMM700"
+              >
+                <img src="img/thinkcentre.jpg" alt="Thinkcentre" width="30%" />
+              </a>
+              <a href="img/server-rack.jpg"
+                ><img src="img/server-rack.jpg" alt="Server Rack" width="30%"
+              /></a>
+              <p>
+                <i
+                  >First one is a small computer, which can do simple stuff like
+                  host files;<br />Second one is a simple computer but can be
+                  turned into a server;<br />Last one is a server that can be
+                  mounted on a server rack.</i
+                >
+              </p>
+              <h2>Example hardware</h2>
+              <p>These are hardware I would want to have on my server</p>
+              <ul>
+                <li>
+                  <a
+                    href="https://www.signa.com/products/signa-xeon-w-series-pro-single-gpu-workstation-w9-3475x-36c-72t-w9-3495x-56c-112-rtx-4060ti-4090-gfx?variant=46418349097274"
+                    >Example 1
+                  </a>
+                </li>
+                <li>
+                  <a href="https://ca.pcpartpicker.com/list/ZzWqbL"
+                    >Example 2</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.synology.com/en-ca/products/DS223j"
+                    >Example 3</a
+                  >
+                </li>
+              </ul>
+              <h2>Software</h2>
+              <h3>Services</h3>
+              <p>
+                We will need some services to host content like pictures,
+                videos, or having a game server. Otherwise, what is the point of
+                having a server?
+              </p>
+              <ul>
+                <li>
+                  <a href="https://jellyfin.org">Jellyfin</a>: Media server for
+                  your legally obtained movies/shows.
+                </li>
+                <li>
+                  <a href="https://nextcloud.com">NextCloud</a>: Cloud server
+                  (or known as a Google Drive/Dropbox alternative)
+                </li>
+                <li>
+                  <a href="https://en.wikipedia.org/wiki/Samba_(software)"
+                    >Samba</a
+                  >: Local file server, don't need a web browser for this!
+                </li>
+              </ul>
+              <h3>Operating Systems</h3>
+              <p>
+                An operating system is the essential part of a server. Without
+                it, nothing will run!
+              </p>
+              <ul>
+                <li>
+                  <a href="https://simple.wikipedia.org/wiki/Linux">Linux</a>:
+                  Recommended for stability and most popular, Linux has a lot of
+                  variety, but
+                  <a href="https://en.wikipedia.org/wiki/Linux_distribution"
+                    >distributions</a
+                  >
+                  like <a href="https://ubuntu.com/server">Ubuntu Server</a> is
+                  a good choice!
+                </li>
+                <li>
+                  <a href="https://www.proxmox.com/en/">Proxmox</a>: Great for
+                  experts and can launch multiple services in separate
+                  containers/VMs.
+                </li>
+                <li>
+                  <a href="https://simple.wikipedia.org/wiki/Microsoft_Windows"
+                    >Windows</a
+                  >: It just works. Can be a great start for your home server,
+                  use it to share files within your network, and run simple
+                  services (like a Jellyfin server).
+                </li>
+              </ul>
+            </td>
+            <td valign="top">
+              <h2>What do I use?</h2>
+              <h2>Synology DS918+</h2>
+              <a href="img/synology.png"
+                ><img src="img/synology.png" alt="Synology Server" width="50%"
+              /></a>
+              <a href="img/synology_physical.jpg"
+                ><img
+                  src="img/synology_physical.jpg"
+                  alt="Synology Server (Physical)"
+                  width="30%"
+              /></a>
+              <p>
+                It has been my main server since 2020, it currently hosts all of
+                my files and uses 13 TB. It also can host other services like
+                Jellyfin, a Minecraft server and some Discord bots.
+              </p>
+              <h3>Specs</h3>
+              <table>
+                <tbody>
+                  <tr>
+                    <td>CPU</td>
+                    <td>Intel Celeron J3455</td>
+                  </tr>
+                  <tr>
+                    <td>RAM</td>
+                    <td>8 GB</td>
+                  </tr>
+                  <tr>
+                    <td>Storage</td>
+                    <td>3x6TB WD Red NAS HDD, 1x4TB WD Red NAS HDD</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h2>Vultr Ubuntu Server</h2>
+              <a href="img/alee14-server-index.png"
+                ><img
+                  src="img/alee14-server-index.png"
+                  alt="server.alee14.me Website"
+                  width="30%"
+              /></a>
+              <a href="img/nextcloud.png"
+                ><img
+                  src="img/nextcloud.png"
+                  alt="NextCloud Server"
+                  width="20%"
+              /></a>
+              <p>
+                I host all public websites in this server. Whether its for my
+                own services or services for my friends. Oh yeah! These are
+                publicly accessible websites like my
+                <a href="https://cloud.alee14.me">cloud server</a>, and a
+                <a href="https://wiki.aircs.racing">wiki</a> that I am hosting
+                right now.
+              </p>
+              <h3>Specs</h3>
+              <table>
+                <tbody>
+                  <tr>
+                    <td>CPU</td>
+                    <td>Intel Xeon Processor (Skylake, IBRS)</td>
+                  </tr>
+                  <tr>
+                    <td>RAM</td>
+                    <td>1 GB</td>
+                  </tr>
+                  <tr>
+                    <td>Storage</td>
+                    <td>25 GB (and 50 GB for Block Storage)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+            <td valign="top">
+              <h2>Proxmox (Lenovo ThinkCentre M800)</h2>
+              <a href="img/proxmox.png"
+                ><img src="img/proxmox.png" alt="Proxmox Server" width="40%"
+              /></a>
+              <br />
+              <a href="img/lenovo.jpg"
+                ><img
+                  src="img/lenovo.jpg"
+                  alt="ThinkCentre M800 SFF"
+                  width="30%"
+              /></a>
+              <p>
+                This is a recent addition as it is being used as my main VM
+                server, where I could easily spin up a new virtual machine
+                without it slowing down my main machine and able to do
+                complicated tasks. This computer was refurbished and bought from
+                Newegg for $188.99 (with taxes) / $179.99 (without taxes), and
+                replaced the 256 GB SSD with the current SSDs below.
+              </p>
+              <h3>Specs</h3>
+              <table>
+                <tbody>
+                  <tr>
+                    <td>CPU</td>
+                    <td>Intel Core i5-6500</td>
+                  </tr>
+                  <tr>
+                    <td>RAM</td>
+                    <td>16 GB</td>
+                  </tr>
+                  <tr>
+                    <td>Storage</td>
+                    <td>500 GB SSD, 2 TB SSD</td>
+                  </tr>
+                </tbody>
+              </table></td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+    <footer>
+      <small>&copy; Copyright 2023 - alee14.me</small>
+      <p>
+        <a href="https://alee14.me">My Website</a>
+        <a href="https://instagram.com/alee14498">Instagram</a>
+      </p>
+    </footer>
+  </body>
+</html>

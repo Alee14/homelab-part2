@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <title>Homelabs</title>
+  </head>
+  <body>
+    <nav>
+      <h1>Homelabs</h1>
+      <p>
+        <a href="index.html">Home</a>
+        &nbsp;&nbsp;
+        <a href="guide.html">Guide</a>
+        &nbsp;&nbsp;
+        <a href="moreinfo.html">Want to know more?</a>
+      </p>
+      <hr />
+    </nav>
+
+    <main>
+      <table width="100%">
+        <tbody>
+          <tr>
+            <td>
+              <h2>About Me</h2>
+              <p>
+                Been into homelabs for a long time, hope to build my own homelab
+                one day! This website is about how you can build your own
+                homelab, and my plans to build my own homelab.
+              </p>
+              <h2>HomeLab Examples</h2>
+              <a href="img/homepage-server.jpeg">
+                <img
+                src="img/homepage-server.jpeg"
+                alt="Server Setup"
+                width="20%"
+              />
+              </a>
+              <a href="img/homelab2.jpeg">
+                <img src="img/homelab2.jpeg" alt="Example homelab" width="30%" />
+              </a>
+              <h2>Learn more</h2>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/gPGf4Y8nQqM?si=UvuNRYb199HwoTnk"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </td>
+            <td width="40%" valign="top">
+              <form action="" method="get">
+                <h2>Register to become a homelaber</h2>
+                <label for="name">Full Name:</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  required="required"
+                  placeholder="John Doe"
+                /><br />
+                <label for="email">Email Address:</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  required="required"
+                  placeholder="email@example.com"
+                /><br />
+                <label for="why"
+                  >Why do you want to be a HomeLaber? (Optional)</label
+                >
+                <input type="text" name="why" id="why" /><br />
+                <label for="whichyter"
+                  >Which HomeLaber do you follow? (Optional)</label
+                ><br />
+                <input type="radio" name="fav_homelaber" id="tim" value="tim" />
+                <label for="tim">Techno Tim</label>
+                <input
+                  type="radio"
+                  name="fav_homelaber"
+                  id="raid"
+                  value="raid"
+                />
+                <label for="raid">Raid Owl</label>
+                <input
+                  type="radio"
+                  name="fav_homelaber"
+                  id="hardware"
+                  value="hardware"
+                />
+                <label for="hardware">Hardware Haven</label><br />
+                <button type="reset">Reset</button>
+                <button type="submit">Subscribe</button>
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <td valign="top">
+              <h2>Blog</h2>
+              <div>
+                <!-- Article 1 -->
+                <article>
+                  <h4>Crafting Your HomeLab Oasis: A DIY Tech Playground</h4>
+                  <small>December 29th, 2023</small>
+                  <p>
+                    Dive into the world of HomeLab mastery as we guide you
+                    through transforming ordinary spaces into personalized tech
+                    wonderlands. Explore the art of hardware tinkering, software
+                    configurations, and unleash the full potential of your
+                    digital domain.
+                  </p>
+                  <p>
+                    <a href="#">Read More</a>
+                  </p>
+                </article>
+                <!-- Article End -->
+                <!-- Article 2 -->
+                <article>
+                  <h4>
+                    From Spare Room to Tech Haven: The Ultimate HomeLab Setup
+                  </h4>
+                  <small>December 21st, 2023</small>
+                  <p>
+                    Join us on a journey to build the ultimate HomeLab setup.
+                    Whether you're a seasoned tech pro or a curious beginner,
+                    our in-depth guides and firsthand experiences will empower
+                    you to turn spare rooms into innovative tech havens.
+                  </p>
+                  <p>
+                    <a href="#">Read More</a>
+                  </p>
+                </article>
+                <!-- Article End -->
+                <!-- Article 3 -->
+                <article>
+                  <h4>HomeLab Chronicles: Navigating DIY Tech Ecosystems</h4>
+                  <small>December 18th, 2023</small>
+                  <p>
+                    Embark on a tech adventure with our HomeLab Chronicles,
+                    exploring the convergence of creativity and functionality.
+                    Our blog covers everything from hardware innovations to
+                    software configurations, providing insights and tutorials
+                    for your DIY HomeLab.
+                  </p>
+                  <p>
+                    <a href="#">Read More</a>
+                  </p>
+                </article>
+                <!-- Article End -->
+                <!-- Article 4 -->
+                <article>
+                  <h4>Unleashing Innovation: The Joy of HomeLab Wonders</h4>
+                  <small>December 8th, 2023</small>
+                  <p>
+                    Experience the thrill of HomeLab wonders with us. Discover
+                    the joy of turning your home into a personalized tech
+                    playground where innovation knows no bounds. Join our
+                    community, and let's navigate the DIY tech landscape
+                    together.
+                  </p>
+                  <p>
+                    <a href="#">Read More</a>
+                  </p>
+                </article>
+                <!-- Article End -->
+              </div>
+            </td>
+            <td>
+              <h2>My Plan</h2>
+              <h3>Introduction</h3>
+              <p>
+                For a while, I have seen tech YouTubers talking about having
+                homelabs, which is just running servers at home and it gave me
+                an idea to have my own one as well.
+              </p>
+              <h3>What is the plan?</h3>
+              <p>
+                Basically, I will be putting things that require a lot of
+                computer resources inside a virtual machine in a server. Then on
+                a low-powered device, I could easily remote into it. The server
+                will also host other services as well such as a media server,
+                storing photos, and other things.
+              </p>
+              <h3>Why should you do it?</h3>
+              <h4>Independence</h4>
+              <p>
+                These days, <em>way</em> more people rely on big tech to manage
+                their lifes, and I wanted to move away from that idea. So around
+                2018/19, I decided to slowly move away from it, starting with
+                emails.
+              </p>
+              <h4>Minimal Computer Setup</h4>
+              <p>
+                So, you won't really need a massive tower on your desk for doing
+                intensive tasks, for example, I could bring a low-powered device
+                and just plug a single cable that powers my entire setup
+                <i>(connects to keyboard, mouse, monitor, and ports)</i>. After
+                that, I could remote into the virtual machine and do high
+                intensive stuff on it like gaming or video editing.
+              </p>
+              <p><b>Current Homelab</b></p>
+              <a href="img/current_server_setup.jpg"
+                ><img
+                  src="img/current_server_setup.jpg"
+                  alt="Current Server Setup"
+                  width="60%"
+              /></a>
+              <br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+    <footer>
+      <small>&copy; Copyright 2023 - alee14.me</small>
+      <p>
+        <a href="https://alee14.me">My Website</a>
+        <a href="https://instagram.com/alee14498">Instagram</a>
+      </p>
+    </footer>
+  </body>
+</html>
